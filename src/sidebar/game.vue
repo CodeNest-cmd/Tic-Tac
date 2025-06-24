@@ -1,6 +1,6 @@
 <template>
-    <h1 class="font-bold">Play Tik-Tac</h1>
-    <h1 class="mb:-5 uppercase font-bold text-5xl"  v-if="winner">player{{ winner }}is Winner</h1>
+    <h1 class="font-bold">Play Tik-Tak-Game</h1>
+    <h1 class="mb:-5 uppercase font-bold text-5xl"  v-if="winner">player {{ winner }} is Winner</h1>
     <h1 class="mb:-5 uppercase font-bold text-5xl" v-else="player">player{{ player }} Turn</h1>
     <div v-for="(row,x) in board" class="flex">
         <div v-for="(cell,y) in row" class="border h-32 w-32 flex justify-center items-center" @click="makeMove(x,y)">
